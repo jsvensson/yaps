@@ -35,3 +35,8 @@ function Show-Console-Colors {
 function tildePath($path) {
     return $path.replace($Home, "~")
 }
+
+function Measure-Last-Command {
+    $command = Get-History -Count 1
+    return $command.EndExecutionTime - $command.StartExecutionTime
+}
