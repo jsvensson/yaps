@@ -7,7 +7,8 @@ There are many PowerShell configuration repos. This one is mine.
 Note: This assumes you want to install yaps under your local profile, typically found in `$Home\Documents\WindowsPowerShell`.
 
 ```
-git clone https://github.com/jsvensson/yaps.git ($profile | Split-Path)
+cd ($profile | Split-Path)
+git clone https://github.com/jsvensson/yaps.git
 ```
 
 To automatically load yaps, add the line `. $PSScriptRoot\yaps\yaps.ps1` to your `$profile`.
